@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/js/boxicons.min.js"></script>
+    <script src="https://kit.fontawesome.com/0e0d8b6fee.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <h3><a href="index.html">Michi</a></h3>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+
+            <span class="active-nav"></span>
+        </nav>
+    </header>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, <span>I'm Miguel Ferreira</span></h1>
+            <p>
+                Explore a passionate software developer with expertise in almost any topic.
+                Be inspired by the work showcased.
+            </p>
+            <a href="#contact" class="btn">Contact Me</a>
+
+            <div class="icons-list">
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+                <a href="#"><i class='bx bxl-github'></i></a>
+            </div>
+        </div>
+        <div class="wheel">
+            <ul>
+                <li class="ball" style="color: #6DB33F;"><i class='bx bxl-spring-boot'></i></li>
+                <li class="ball" style="color: #f0e551;"><i class='bx bxl-firebase'></i></li>
+                <li class="ball" style="color: #007396;"><i class='bx bxl-java'></i></li>
+                <li class="ball" style="color: #787CB5;"><i class='bx bxl-php'></i></li>
+                <li class="ball" style="color: #68A063;"><i class='bx bxl-nodejs'></i></li>
+                <li class="ball" style="color: #2496ED;"><i class='bx bxl-docker'></i></i></li>
+                <li class="ball" style="color: #007ACC;"><i class='bx bxl-typescript'></i></li>
+                <li class="ball" style="color: #336791;"><i class='bx bxl-postgresql'></i></li>
+
+            </ul>
+        </div>
+    </section>
+    <section id="about">
+        <div class="about-content">
+            <h1>About <span>Me</span></h1>
+            <p>
+                I am an enthusiastic and inquisitive individual who is passionate about continuously expanding my
+                knowledge in the realm of technology.
+                With hands-on experience in various tools and frameworks such as Firebase, Java, PHP, TypeScript,
+                Heroku, Docker, Bootstrap, React, Flask, Rust, and Spring Boot,
+                I embrace every opportunity to explore cutting-edge solutions.
+                Join me on this exciting tech journey as we push boundaries and drive innovation together.
+            </p>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="projects-content">
+            <h1>Projects</h1>
+            <div class="projects-grid">
+                <div class="projects-column">
+                    <div class="project-grid-item-card">
+                        <h4>Java Android Application</h4>
+                        <p>
+                            we made a android application where teachers and administrators
+                            could sign in and could request materials to use in their classes or they could
+                            request a laboratory room to do activities with some tools
+                        </p>
+                        <div class="tech-list">
+                            <h5>Technologies Used</h5>
+                            <div class="techs">
+                                <a href="https://spring.io/projects/spring-boot" style="color: #6DB33F;"><i class='bx bxl-spring-boot'></i></a>
+                                <a href="https://firebase.google.com" style="color: #FFCA28;"><i class='bx bxl-firebase'></i></a>
+                                <a href="https://www.heroku.com" style="color: #79589F;"><i class='bx bxl-heroku'></i></a>
+                                <a href="https://www.java.com/en/" style="color: #ED8B00;"><i class='bx bxl-java'></i></a>
+                                <a href="https://developer.android.com" style="color: #3DDC84;"><i class='bx bxl-android'></i></a>
+                            </div>
+                        </div>
+                        <a class="btn" href="https://github.com/MiguelFerreira18/QS_Gestao_Material.git">View Project</a>
+                    </div>
+
+                    <div class="project-grid-item-card">
+                        <h4>Distributed File System from scratch</h4>
+                        <p>
+                            we made a distributed file system from scratch that receives a key,
+                            value pair to be stored in the file system of the server, we also implemented
+                            concenpts that would normally be in a distributed database, like leader election,
+                            broadcast and fault tolerance systems
+                        </p>
+                        <div class="tech-list">
+                            <h5>Technologies Used</h5>
+                            <div class="techs">
+                                <a href="https://nodejs.org/en" style="color: #6DB33F;"><i class='bx bxl-nodejs'></i></i></a>
+                                <a href="https://www.typescriptlang.org" style="color: #156ada;"><i class='bx bxl-typescript'></i></a>
+                                <a href="https://www.docker.com" style="color: #1693b3;"><i class='bx bxl-docker'></i></i></a>
+                            </div>
+
+                        </div>
+                        <a class="btn" href="https://github.com/MiguelFerreira18/DistributedFileSystem.git">View Project</a>
+                    </div>
+
+                    <div class="project-grid-item-card">
+                        <h4>Rust Password Manager</h4>
+                        <p>Simple password manager made with the rust language, it manipulates the
+                            file system to store the passwords in a file
+                        </p>
+                        <div class="tech-list">
+                            <h5>Technologies Used</h5>
+                            <div class="techs">
+                                <a href="https://www.rust-lang.org" style="color: #c4961a;"><i class="fab fa-rust"></i></i></a>
+                                <a href="https://crates.io" style="color: #b8ad1a;"><i class="fa-solid fa-box"></i></a>
+                            </div>
+                        </div>
+                        <a class="btn" href="https://github.com/MiguelFerreira18/Simple_password_manager.git">View Project</a>
+                    </div>
+
+                </div>
+                <div class="projects-column">
+
+                    <div class="project-grid-item-card">
+                        <h4>Web application for federação académica do Porto </h4>
+                        <p>
+                            A web application developed for Federação académica do Porto to,
+                            menage university material and adding new products,
+                            barracks, universities, and students. Utilizing various technologies,
+                            the application met constraints and allowed for easy addition of students.
+
+                        </p>
+                        <div class="tech-list">
+                            <h5>Technologies Used</h5>
+                            <div class="techs">
+                                <a href="https://www.php.net" style="color: #777BB3;"><i class="fa-brands fa-php"></i></a>
+                                <a href="https://www.mysql.com" style="color: #d6c80c;"><i class="fa-solid fa-database"></i></i></i></a>
+                                <a href="https://getbootstrap.com" style="color: #9116c2;"><i class="fa-brands fa-bootstrap"></i></a>
+                                <a href="https://nodejs.org/en" style="color: #6DB33F;"><i class='bx bxl-nodejs'></i></i></a>
+
+                            </div>
+
+                        </div>
+                        <a class="btn" href="https://github.com/MiguelFerreira18/Fap-project-web-app.git">View Project</a>
+                    </div>
+
+                    <div class="project-grid-item-card">
+                        <h4>E commerce webapp</h4>
+                        <p>
+                            This e-commerce web application offers a dynamic platform for smartphones,
+                            focusing on e-commerce and smartphone sales.
+                            Its intuitive user interface ensures convenient and secure online shopping experiences.
+                        </p>
+                        <div class="tech-list">
+                            <h5>Technologies Used</h5>
+                            <div class="techs">
+                                <a href="https://www.postgresql.org" style="color: #777BB3;"><i class='bx bxl-postgresql'></i></a>
+                                <a href="https://nodejs.org/en" style="color: #6DB33F;"><i class='bx bxl-nodejs'></i></i></a>
+                                <a href="https://react.dev" style="color: #1f9cb3;"><i class='bx bxl-react'></i></a>
+                                <a href="https://www.docker.com" style="color: #1693b3;"><i class='bx bxl-docker'></i></i></a>
+                            </div>
+                        </div>
+                        <a class="btn" href="https://github.com/MiguelFerreira18/e-commerce-website.git">View Project</a>
+                    </div>
+
+
+
+                </div>
+
+                <div class="projects-column">
+
+                    <div class="project-grid-item-card">
+                        <h4>Java Turist City Simulator</h4>
+                        <p>
+                            An immersive city simulation uses Java's concurrency features to create a dynamic
+                            environment for efficient transportation.
+                            Threads represent dedicated transports, allowing
+                            seamless coordination and smooth transit of individuals within the cityscape.
+                        </p>
+                        <div class="tech-list">
+                            <h5>Technologies Used</h5>
+                            <div class="techs">
+                                <a href="https://www.java.com/en/" style="color: #ED8B00;"><i class='bx bxl-java'></i></a>
+                            </div>
+
+                        </div>
+                        <a class="btn" href="https://github.com/MiguelFerreira18">View Project</a>
+                    </div>
+                    <div class="project-grid-item-card">
+                        <h4>Machine Learning Game Recomendation System</h4>
+                        <p>
+                            With the usage of a kaggle dataset we made a machine learning algorith that was capable of
+                            seeing the reviews of an user and based on the reviews return a list of game recomendations
+                        </p>
+                        <div class="tech-list">
+                            <h5>Technologies Used</h5>
+                            <div class="techs">
+                                <a href="https://www.python.org" style="color: #777BB3;"><i class='bx bxl-python'></i></a>
+                                <a href="https://flask.palletsprojects.com/en/2.3.x/" style="color: #000000;"><i class='bx bxl-flask'></i></a>
+                            </div>
+                        </div>
+                        <a class="btn" href="https://github.com/MiguelFerreira18/Steam_Review_MCHL.git">View Project</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="education">
+        <div class="education-content">
+            <div class="education-column">
+                <h2>Education</h2>
+                <div class="outer-line">
+                    <div class="inner-line">
+                        <div class="card">
+                            <h5><i class='bx bxs-calendar' ></i><b> 2020 - 2023</b></h5>
+                            <h4>Graduation degree - Universidade Portucalense</h4>
+                            <p>Computer science degree</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="education-column">
+                <h2>Experience</h2>
+                <div class="outer-line">
+                    <div class="inner-line">
+                        <div class="card">
+                            <h5><i class='bx bxs-calendar' ></i><b> 2023 - 2023</b></h5>
+                            <h4>Outsystems developer - Sogrape Wines</h4>
+                            <p>
+                                Implemented Outsystems sales analysis application, increased efficiency, and improved performance evaluation. 
+                                Collaborated with cross-functional teams, designed user-friendly interface, 
+                                and conducted extensive testing for bug-free product.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="contact-content">
+            <h1>Contact <span>Me!</span></h1>
+            <form action="">
+                <div class="form-grid">
+                    <div class="column">
+                        <input type="text" placeholder="Full Name">
+                    </div>
+                    <div class="column">
+                        <input type="email" placeholder="Email Adress">
+
+                    </div>
+                </div>
+                <div class="imp">
+                    <textarea name="" id="" cols="20" rows="5" placeholder="Your Message"></textarea>
+
+                    <button type="submit" class="btn">Submit</button>
+                </div>
+            </form>
+        </div>
+
+    </section>
+    <script type="text/javascript" src="./index.js"></script>
+</body>
+
+</html>
