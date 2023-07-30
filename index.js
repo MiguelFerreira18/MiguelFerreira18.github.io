@@ -52,24 +52,42 @@ window.onscroll = () => {
 
 form.addEventListener("submit", function (event) {
 	event.preventDefault(); // Prevent the form from submitting
-	console.log("event");
+	const name = document.getElementById("name");
+	const email = document.getElementById("email");
+	const message = document.getElementById("message");
 
 	// Display the reCAPTCHA container
 	recaptchaContainer.style.display = "block";
 
 	const captchaResponse = grecaptcha.getResponse();
-	if (captchaResponse.length < 0) {
+	console.log(captchaResponse);
+	console.log(captchaResponse.length);
+	if (captchaResponse.length == 0) {
 		throw new Error("Captcha not completed");
-	}
+	} else {
+		const formData = new FormData(event.target);
+		const params = new URLSearchParams(formData);
+		fetch("https://formspree.io/f/xgejoolw", {
+			method: "POST",
+			body: params,
+		})
+			.then((res) => res.json())
+			.catch((err) => console.log(err));
 
-	const formData = new FormData(event.target);
-	const params = new URLSearchParams(formData);
-	console.log(event.target);
-	fetch("https://formspree.io/f/xgejoolw", {
-		method: "POST",
-		body: params,
-	})
-		.then((res) => res.json())
-		.then((data) => console.log(data))
-		.catch((err) => console.log(err));
+		recaptchaContainer.style.display = "none";
+		name.value = "";
+		email.value = "";
+		message.value = "";
+		grecaptcha.reset();
+
+		// Show the modal
+		const modal = document.getElementById("modal");
+		modal.style.display = "block";
+
+		const closeBtn = document.querySelector(".close");
+		closeBtn.addEventListener("click", function () {
+			const modal = document.getElementById("modal");
+			modal.style.display = "none";
+		});
+	}
 });

@@ -280,23 +280,29 @@
     <section id="contact">
         <div class="contact-content">
             <h1>Contact <span>Me!</span></h1>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <button class="btn close">Close</button>
+                    <h1>Thank you!</h1>
+                </div>
+            </div>
             <form>
                 <div id="recaptcha-container" style="display: none;">
                     <div class="g-recaptcha" data-sitekey="6LeqMmknAAAAAFa8xF2WiFkI0UsOWzPLhCx_tgkb"></div>
                 </div>
                 <div class="form-grid">
                     <div class="column">
-                        <input type="text" name="name" placeholder="Full Name">
+                        <input id="name" type="text" name="name" placeholder="Full Name">
                     </div>
                     <div class="column">
-                        <input type="email" name="email" placeholder="Email Adress">
+                        <input id="email" type="email" name="email" placeholder="Email Adress">
 
                     </div>
                 </div>
                 <div class="imp">
-                    <textarea cols="20" rows="5" name="message" placeholder="Your Message"></textarea>
+                    <textarea id="message" cols="20" rows="5" name="message" placeholder="Your Message"></textarea>
 
-                    <button type="submit" class="btn">Submit</button>
+                    <button id="submit-btn" type="submit" class="btn">Submit</button>
                 </div>
             </form>
         </div>
@@ -305,4 +311,5 @@
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script type="text/javascript" src="./index.js"></script>
 </body>
+
 </html>
